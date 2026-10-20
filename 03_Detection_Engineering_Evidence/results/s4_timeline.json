@@ -1,0 +1,117 @@
+[
+  {
+    "t": "2026-09-18T15:17:00+00:00",
+    "records_per_min": 0,
+    "cumulative": 0
+  },
+  {
+    "t": "2026-09-18T15:18:00+00:00",
+    "records_per_min": 0,
+    "cumulative": 0
+  },
+  {
+    "t": "2026-09-18T15:19:00+00:00",
+    "records_per_min": 0,
+    "cumulative": 0
+  },
+  {
+    "t": "2026-09-18T15:20:00+00:00",
+    "records_per_min": 2500,
+    "cumulative": 2500
+  },
+  {
+    "t": "2026-09-18T15:21:00+00:00",
+    "records_per_min": 2000,
+    "cumulative": 4500
+  },
+  {
+    "t": "2026-09-18T15:22:00+00:00",
+    "records_per_min": 2000,
+    "cumulative": 6500
+  },
+  {
+    "t": "2026-09-18T15:23:00+00:00",
+    "records_per_min": 2000,
+    "cumulative": 8500
+  },
+  {
+    "t": "2026-09-18T15:24:00+00:00",
+    "records_per_min": 2000,
+    "cumulative": 10500
+  },
+  {
+    "t": "2026-09-18T15:25:00+00:00",
+    "records_per_min": 2000,
+    "cumulative": 12500
+  },
+  {
+    "t": "2026-09-18T15:26:00+00:00",
+    "records_per_min": 2500,
+    "cumulative": 15000
+  },
+  {
+    "t": "2026-09-18T15:27:00+00:00",
+    "records_per_min": 2000,
+    "cumulative": 17000
+  },
+  {
+    "t": "2026-09-18T15:28:00+00:00",
+    "records_per_min": 2000,
+    "cumulative": 19000
+  },
+  {
+    "t": "2026-09-18T15:29:00+00:00",
+    "records_per_min": 2000,
+    "cumulative": 21000
+  },
+  {
+    "t": "2026-09-18T15:30:00+00:00",
+    "records_per_min": 2000,
+    "cumulative": 23000
+  },
+  {
+    "t": "2026-09-18T15:31:00+00:00",
+    "records_per_min": 2000,
+    "cumulative": 25000
+  },
+  {
+    "t": "2026-09-18T15:32:00+00:00",
+    "records_per_min": 0,
+    "cumulative": 25000
+  },
+  {
+    "t": "2026-09-18T15:33:00+00:00",
+    "records_per_min": 0,
+    "cumulative": 25000
+  },
+  {
+    "t": "2026-09-18T15:34:00+00:00",
+    "records_per_min": 0,
+    "cumulative": 25000
+  },
+  {
+    "t": "2026-09-18T15:35:00+00:00",
+    "records_per_min": 0,
+    "cumulative": 25000
+  },
+  {
+    "t": "2026-09-18T15:36:00+00:00",
+    "records_per_min": 0,
+    "cumulative": 25000
+  },
+  {
+    "t": "2026-09-18T15:37:00+00:00",
+    "records_per_min": 0,
+    "cumulative": 25000
+  },
+  {
+    "t": "2026-09-18T15:38:00+00:00",
+    "records_per_min": 0,
+    "cumulative": 25000
+  },
+  {
+    "t": "2026-09-18T15:39:00+00:00",
+    "records_per_min": 0,
+    "cumulative": 25000
+  }
+]

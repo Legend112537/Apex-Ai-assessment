@@ -1,0 +1,106 @@
+[
+  {
+    "id": "S1",
+    "name": "Admin credential attack, success without MFA",
+    "start": "2026-09-18T02:10:00+00:00",
+    "expected": [
+      "D01",
+      "D02"
+    ],
+    "window_min": 15
+  },
+  {
+    "id": "S2",
+    "name": "Privilege escalation and backdoor accounts",
+    "start": "2026-09-18T02:16:00+00:00",
+    "expected": [
+      "D03",
+      "D04"
+    ],
+    "window_min": 15
+  },
+  {
+    "id": "S3",
+    "name": "Service credential used from unseen network",
+    "start": "2026-09-18T15:05:00+00:00",
+    "expected": [
+      "D05"
+    ],
+    "window_min": 5
+  },
+  {
+    "id": "S4",
+    "name": "Service account reads 25,000 records in 12 min, then external egress",
+    "start": "2026-09-18T15:20:00+00:00",
+    "expected": [
+      "D06",
+      "D07",
+      "D08"
+    ],
+    "window_min": 40
+  },
+  {
+    "id": "S5",
+    "name": "Agent executes unapproved/prohibited tools",
+    "start": "2026-09-18T10:40:00+00:00",
+    "expected": [
+      "D09"
+    ],
+    "window_min": 5
+  },
+  {
+    "id": "S6",
+    "name": "Agent enumerates customers",
+    "start": "2026-09-18T09:15:00+00:00",
+    "expected": [
+      "D10"
+    ],
+    "window_min": 10
+  },
+  {
+    "id": "S7",
+    "name": "Indirect injection then side-effect call",
+    "start": "2026-09-18T13:30:00+00:00",
+    "expected": [
+      "D11"
+    ],
+    "window_min": 5
+  },
+  {
+    "id": "S8",
+    "name": "WAF weakened and gateway logging silent",
+    "start": "2026-09-18T03:40:00+00:00",
+    "expected": [
+      "D12",
+      "D13"
+    ],
+    "window_min": 30
+  },
+  {
+    "id": "S9",
+    "name": "Secret committed",
+    "start": "2026-09-18T16:10:00+00:00",
+    "expected": [
+      "D14"
+    ],
+    "window_min": 5
+  },
+  {
+    "id": "S10",
+    "name": "PHI written to prompt logs",
+    "start": "2026-09-18T17:05:00+00:00",
+    "expected": [
+      "D15"
+    ],
+    "window_min": 5
+  },
+  {
+    "id": "S11",
+    "name": "Token spike (denial-of-wallet)",
+    "start": "2026-09-18T18:00:00+00:00",
+    "expected": [
+      "D16"
+    ],
+    "window_min": 45
+  }
+]

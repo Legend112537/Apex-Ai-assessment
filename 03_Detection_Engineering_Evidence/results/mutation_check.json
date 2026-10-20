@@ -1,0 +1,54 @@
+{
+  "mutants": [
+    {
+      "name": "D06 threshold compare > to >=",
+      "status": "KILLED"
+    },
+    {
+      "name": "D02 ignore MFA flag",
+      "status": "KILLED"
+    },
+    {
+      "name": "D03 drop self-approval check",
+      "status": "KILLED"
+    },
+    {
+      "name": "D05 compare exact IP not /24",
+      "status": "KILLED"
+    },
+    {
+      "name": "D07 ignore allowlist",
+      "status": "KILLED"
+    },
+    {
+      "name": "D09 skip prohibited tools",
+      "status": "KILLED"
+    },
+    {
+      "name": "D11 also alert on read-only tools",
+      "status": "KILLED"
+    },
+    {
+      "name": "D12 wrong gap comparison",
+      "status": "KILLED"
+    },
+    {
+      "name": "D13 disable rule",
+      "status": "KILLED"
+    },
+    {
+      "name": "D15 leak raw value in alert",
+      "status": "KILLED"
+    },
+    {
+      "name": "D01 ignore failure window",
+      "status": "KILLED"
+    },
+    {
+      "name": "D16 use > cap x10",
+      "status": "KILLED"
+    }
+  ],
+  "killed": 12,
+  "total": 12
+}

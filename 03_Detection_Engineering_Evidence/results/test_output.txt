@@ -1,0 +1,55 @@
+test_d09_negative_approved_or_read_only (test_rules.TestAgents.test_d09_negative_approved_or_read_only) ... ok
+test_d09_prohibited_tool_even_with_approval (test_rules.TestAgents.test_d09_prohibited_tool_even_with_approval) ... ok
+test_d09_unapproved_side_effect (test_rules.TestAgents.test_d09_unapproved_side_effect) ... ok
+test_d10_negative_normal_busy_agent (test_rules.TestAgents.test_d10_negative_normal_busy_agent) ... ok
+test_d10_positive_enumeration (test_rules.TestAgents.test_d10_positive_enumeration) ... ok
+test_d10_positive_volume (test_rules.TestAgents.test_d10_positive_volume) ... ok
+test_d11_negative_no_flag (test_rules.TestAgents.test_d11_negative_no_flag) ... ok
+test_d11_negative_read_only_after_flag (test_rules.TestAgents.test_d11_negative_read_only_after_flag) ... ok
+test_d11_negative_too_late (test_rules.TestAgents.test_d11_negative_too_late) ... ok
+test_d11_positive_side_effect_after_flag (test_rules.TestAgents.test_d11_positive_side_effect_after_flag) ... ok
+test_d12_negative_short_gap (test_rules.TestControlsAndData.test_d12_negative_short_gap) ... ok
+test_d12_positive_gap (test_rules.TestControlsAndData.test_d12_positive_gap) ... ok
+test_d12_positive_silent_until_end_of_data (test_rules.TestControlsAndData.test_d12_positive_silent_until_end_of_data) ... ok
+test_d13_positive_and_negative (test_rules.TestControlsAndData.test_d13_positive_and_negative) ... ok
+test_d14_positive_and_negative (test_rules.TestControlsAndData.test_d14_positive_and_negative) ... ok
+test_d15_negative_number_without_context (test_rules.TestControlsAndData.test_d15_negative_number_without_context) ... ok
+test_d15_positive_and_value_is_masked (test_rules.TestControlsAndData.test_d15_positive_and_value_is_masked) ... ok
+test_d16_positive_and_negative (test_rules.TestControlsAndData.test_d16_positive_and_negative) ... ok
+test_d06_alert_fires_when_threshold_crossed_not_at_end (test_rules.TestDataAccess.test_d06_alert_fires_when_threshold_crossed_not_at_end) ... ok
+test_d06_boundary_strictly_greater (test_rules.TestDataAccess.test_d06_boundary_strictly_greater) ... ok
+test_d06_human_threshold_is_lower (test_rules.TestDataAccess.test_d06_human_threshold_is_lower) ... ok
+test_d06_negative_below_threshold (test_rules.TestDataAccess.test_d06_negative_below_threshold) ... ok
+test_d06_per_actor_override (test_rules.TestDataAccess.test_d06_per_actor_override) ... ok
+test_d06_positive_service (test_rules.TestDataAccess.test_d06_positive_service) ... ok
+test_d07_negative_allowlisted_destination (test_rules.TestDataAccess.test_d07_negative_allowlisted_destination) ... ok
+test_d07_negative_egress_long_after (test_rules.TestDataAccess.test_d07_negative_egress_long_after) ... ok
+test_d07_positive (test_rules.TestDataAccess.test_d07_positive) ... ok
+test_d08_negative_allowlisted (test_rules.TestDataAccess.test_d08_negative_allowlisted) ... ok
+test_d08_positive_and_severity (test_rules.TestDataAccess.test_d08_positive_and_severity) ... ok
+test_alerts_contain_no_raw_patient_identifiers (test_rules.TestEndToEnd.test_alerts_contain_no_raw_patient_identifiers) ... ok
+test_benign_day_has_zero_alerts (test_rules.TestEndToEnd.test_benign_day_has_zero_alerts) ... ok
+test_every_rule_fires_on_attack_day (test_rules.TestEndToEnd.test_every_rule_fires_on_attack_day) ... ok
+test_d01_boundary_threshold (test_rules.TestIdentity.test_d01_boundary_threshold) ... ok
+test_d01_negative_failures_spread_beyond_5min_window (test_rules.TestIdentity.test_d01_negative_failures_spread_beyond_5min_window) ... ok
+test_d01_negative_failures_without_success (test_rules.TestIdentity.test_d01_negative_failures_without_success) ... ok
+test_d01_negative_few_failures (test_rules.TestIdentity.test_d01_negative_few_failures) ... ok
+test_d01_negative_slow_failures (test_rules.TestIdentity.test_d01_negative_slow_failures) ... ok
+test_d01_positive (test_rules.TestIdentity.test_d01_positive) ... ok
+test_d02_negative_failed_login (test_rules.TestIdentity.test_d02_negative_failed_login) ... ok
+test_d02_negative_mfa_true (test_rules.TestIdentity.test_d02_negative_mfa_true) ... ok
+test_d02_negative_standard_user_no_mfa_is_not_this_rule (test_rules.TestIdentity.test_d02_negative_standard_user_no_mfa_is_not_this_rule) ... ok
+test_d02_positive (test_rules.TestIdentity.test_d02_positive) ... ok
+test_d03_negative_approved (test_rules.TestIdentity.test_d03_negative_approved) ... ok
+test_d03_negative_non_privileged_role (test_rules.TestIdentity.test_d03_negative_non_privileged_role) ... ok
+test_d03_positive_no_ticket (test_rules.TestIdentity.test_d03_positive_no_ticket) ... ok
+test_d03_positive_self_approved (test_rules.TestIdentity.test_d03_positive_self_approved) ... ok
+test_d04_negative_slow_creation (test_rules.TestIdentity.test_d04_negative_slow_creation) ... ok
+test_d04_positive_and_boundary (test_rules.TestIdentity.test_d04_positive_and_boundary) ... ok
+test_d05_negative_same_subnet_new_ip (test_rules.TestIdentity.test_d05_negative_same_subnet_new_ip) ... ok
+test_d05_positive_new_network (test_rules.TestIdentity.test_d05_positive_new_network) ... ok
+
+----------------------------------------------------------------------
+Ran 50 tests in 0.159s
+
+OK

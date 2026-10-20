@@ -1,0 +1,18 @@
+time_utc,rule,severity,actor,mapping,detail
+2026-09-18T02:14:00+00:00,D01,High,admin.rania,T1110,25 failed logins from 198.51.100.23 then success
+2026-09-18T02:14:00+00:00,D02,High,admin.rania,T1078,role=Admin ip=198.51.100.23 mfa=false
+2026-09-18T02:16:00+00:00,D03,High,admin.rania,T1098,Admin -> svc-backup2 (no change ticket)
+2026-09-18T02:19:48+00:00,D04,High,admin.rania,T1136,5 accounts created within 10 min
+2026-09-18T03:41:00+00:00,D13,Critical,admin.khalid,T1562,waf_mode_detect_only on waf-prod
+2026-09-18T03:54:00+00:00,D12,High,api-gateway,T1562,no events from api-gateway for 27 min
+2026-09-18T09:16:20+00:00,D10,Medium,agent-intake-01,T1119 / OWASP-LLM06,"21 calls, 21 distinct customers in 5 min"
+2026-09-18T10:40:00+00:00,D09,High,agent-support-01,OWASP-LLM06,tool=issue_refund session=sess-x1
+2026-09-18T10:40:30+00:00,D09,Critical,agent-support-01,OWASP-LLM06,tool=create_user session=sess-x1
+2026-09-18T13:30:40+00:00,D11,High,agent-billing-01,OWASP-LLM01,tool=update_customer within 120s of flagged retrieval (session sess-inj-1)
+2026-09-18T15:05:00+00:00,D05,High,svc-integration,T1078.004,source 198.51.100.77 not in baseline networks
+2026-09-18T15:22:09.600000+00:00,D06,High,svc-analytics,T1213,5138 records in 10 min (threshold 5000)
+2026-09-18T15:36:00+00:00,D07,Critical,svc-analytics,T1041,mass read then 412000000 bytes to 203.0.113.45
+2026-09-18T15:36:00+00:00,D08,High,svc-analytics,T1048,dst 203.0.113.45:443 bytes=412000000
+2026-09-18T16:10:00+00:00,D14,High,dev.noor,T1552,1 finding(s) in apex/platform
+2026-09-18T17:05:00+00:00,D15,High,assistant-svc,OWASP-LLM02,pattern=national_id_ctx value=*******001
+2026-09-18T18:17:00+00:00,D16,Medium,tenant-b,OWASP-LLM10,400956 tokens in 60 min (cap 400000)

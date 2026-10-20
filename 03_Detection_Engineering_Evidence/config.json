@@ -1,0 +1,30 @@
+{
+  "_comment": "Detection thresholds. All values are starting hypotheses to be tuned on 2-4 weeks of real baseline data.",
+  "privileged_roles": ["Admin", "Owner", "DBAdmin", "SecurityAdmin"],
+  "bruteforce": {"fail_threshold": 10, "window_min": 5, "success_within_min": 10},
+  "burst_user_create": {"count": 5, "window_min": 10},
+  "service_ip_baseline_hours": 12,
+  "mass_read": {
+    "window_min": 10,
+    "human_threshold": 300,
+    "service_threshold": 5000,
+    "per_actor_override": {"svc-report-batch": 3000},
+    "cooldown_min": 30
+  },
+  "bulk_then_egress_min": 30,
+  "egress_allowlist": ["192.0.2.25", "198.51.100.10", "198.51.100.11"],
+  "egress_high_bytes": 50000000,
+  "agent": {
+    "prohibited_tools": ["create_user", "delete_record"],
+    "approval_required_tools": ["update_customer", "send_email", "issue_refund"],
+    "read_only_tools": ["search_customer", "read_invoice"],
+    "volume_window_min": 5,
+    "volume_threshold": 30,
+    "distinct_customer_threshold": 20,
+    "cooldown_min": 10
+  },
+  "injection_followup_sec": 120,
+  "log_silence_min": 15,
+  "control_disabled_events": ["mfa_policy_disabled", "waf_mode_detect_only", "audit_logging_disabled", "guardrail_disabled"],
+  "wallet": {"window_min": 60, "tenant_token_cap": 400000}
+}

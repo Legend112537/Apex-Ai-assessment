@@ -1,0 +1,12 @@
+FROM python:latest
+WORKDIR /app
+COPY . .
+ENV OPENAI_API_KEY=sk-live-EXAMPLE-DO-NOT-USE
+ENV DATABASE_URL=postgres://admin:Password123@prod-db:5432/app
+RUN apt-get update && apt-get install -y curl wget vim openssh-server netcat
+RUN pip install -r requirements.txt
+RUN curl -sSL https://example.com/install.sh | bash
+EXPOSE 22 8000 5432
+USER root
+RUN chmod -R 777 /app
+CMD ["python", "app.py"]

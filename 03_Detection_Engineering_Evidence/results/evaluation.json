@@ -1,0 +1,152 @@
+{
+  "dataset": {
+    "benign_events": 12050,
+    "attack_day_events": 12209,
+    "scenarios": 11,
+    "rules": 16,
+    "seed": 42,
+    "data_is_synthetic": true
+  },
+  "benign_day_alerts": 0,
+  "attack_day_alerts": 17,
+  "scenarios_detected": 11,
+  "scenarios_total": 11,
+  "unexpected_alerts_on_attack_day": 0,
+  "scenario_results": [
+    {
+      "id": "S1",
+      "name": "Admin credential attack, success without MFA",
+      "expected": "D01,D02",
+      "fired": "D01,D02",
+      "detected": true,
+      "time_to_first_alert_s": 240.0,
+      "time_to_full_coverage_s": 240.0
+    },
+    {
+      "id": "S2",
+      "name": "Privilege escalation and backdoor accounts",
+      "expected": "D03,D04",
+      "fired": "D03,D04",
+      "detected": true,
+      "time_to_first_alert_s": 0.0,
+      "time_to_full_coverage_s": 228.0
+    },
+    {
+      "id": "S3",
+      "name": "Service credential used from unseen network",
+      "expected": "D05",
+      "fired": "D05",
+      "detected": true,
+      "time_to_first_alert_s": 0.0,
+      "time_to_full_coverage_s": 0.0
+    },
+    {
+      "id": "S4",
+      "name": "Service account reads 25,000 records in 12 min, then external egress",
+      "expected": "D06,D07,D08",
+      "fired": "D06,D07,D08",
+      "detected": true,
+      "time_to_first_alert_s": 129.6,
+      "time_to_full_coverage_s": 960.0
+    },
+    {
+      "id": "S5",
+      "name": "Agent executes unapproved/prohibited tools",
+      "expected": "D09",
+      "fired": "D09",
+      "detected": true,
+      "time_to_first_alert_s": 0.0,
+      "time_to_full_coverage_s": 0.0
+    },
+    {
+      "id": "S6",
+      "name": "Agent enumerates customers",
+      "expected": "D10",
+      "fired": "D10",
+      "detected": true,
+      "time_to_first_alert_s": 80.0,
+      "time_to_full_coverage_s": 80.0
+    },
+    {
+      "id": "S7",
+      "name": "Indirect injection then side-effect call",
+      "expected": "D11",
+      "fired": "D11",
+      "detected": true,
+      "time_to_first_alert_s": 40.0,
+      "time_to_full_coverage_s": 40.0
+    },
+    {
+      "id": "S8",
+      "name": "WAF weakened and gateway logging silent",
+      "expected": "D12,D13",
+      "fired": "D12,D13",
+      "detected": true,
+      "time_to_first_alert_s": 60.0,
+      "time_to_full_coverage_s": 840.0
+    },
+    {
+      "id": "S9",
+      "name": "Secret committed",
+      "expected": "D14",
+      "fired": "D14",
+      "detected": true,
+      "time_to_first_alert_s": 0.0,
+      "time_to_full_coverage_s": 0.0
+    },
+    {
+      "id": "S10",
+      "name": "PHI written to prompt logs",
+      "expected": "D15",
+      "fired": "D15",
+      "detected": true,
+      "time_to_first_alert_s": 0.0,
+      "time_to_full_coverage_s": 0.0
+    },
+    {
+      "id": "S11",
+      "name": "Token spike (denial-of-wallet)",
+      "expected": "D16",
+      "fired": "D16",
+      "detected": true,
+      "time_to_first_alert_s": 1020.0,
+      "time_to_full_coverage_s": 1020.0
+    }
+  ],
+  "s4_exposure": {
+    "total_records": 25000,
+    "start": "2026-09-18T15:20:00+00:00",
+    "d06_alert": "2026-09-18T15:22:09.600000+00:00",
+    "seconds_start_to_d06": 129.6,
+    "records_at_d06_alert": 5000,
+    "pct_at_alert": 20.0,
+    "assumed_auto_revoke_delay_s": 120,
+    "records_if_auto_revoke": 9000,
+    "pct_if_auto_revoke": 36.0,
+    "egress_ts": "2026-09-18T15:36:00+00:00",
+    "egress_bytes": 412000000,
+    "alerts": {
+      "D06": "2026-09-18T15:22:09.600000+00:00",
+      "D07": "2026-09-18T15:36:00+00:00",
+      "D08": "2026-09-18T15:36:00+00:00"
+    }
+  },
+  "rules_fired_on_attack_day": [
+    "D01",
+    "D02",
+    "D03",
+    "D04",
+    "D05",
+    "D06",
+    "D07",
+    "D08",
+    "D09",
+    "D10",
+    "D11",
+    "D12",
+    "D13",
+    "D14",
+    "D15",
+    "D16"
+  ]
+}

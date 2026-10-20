@@ -1,0 +1,162 @@
+[
+  {
+    "rule": "D01",
+    "name": "Brute force followed by successful login",
+    "severity": "High",
+    "ts": "2026-09-18T02:14:00+00:00",
+    "actor": "admin.rania",
+    "detail": "25 failed logins from 198.51.100.23 then success",
+    "mapping": "T1110",
+    "ip": "198.51.100.23"
+  },
+  {
+    "rule": "D02",
+    "name": "Privileged login without MFA",
+    "severity": "High",
+    "ts": "2026-09-18T02:14:00+00:00",
+    "actor": "admin.rania",
+    "detail": "role=Admin ip=198.51.100.23 mfa=false",
+    "mapping": "T1078",
+    "ip": "198.51.100.23"
+  },
+  {
+    "rule": "D03",
+    "name": "Privileged role granted outside approved change",
+    "severity": "High",
+    "ts": "2026-09-18T02:16:00+00:00",
+    "actor": "admin.rania",
+    "detail": "Admin -> svc-backup2 (no change ticket)",
+    "mapping": "T1098"
+  },
+  {
+    "rule": "D04",
+    "name": "Burst account creation",
+    "severity": "High",
+    "ts": "2026-09-18T02:19:48+00:00",
+    "actor": "admin.rania",
+    "detail": "5 accounts created within 10 min",
+    "mapping": "T1136"
+  },
+  {
+    "rule": "D13",
+    "name": "Security control disabled or weakened",
+    "severity": "Critical",
+    "ts": "2026-09-18T03:41:00+00:00",
+    "actor": "admin.khalid",
+    "detail": "waf_mode_detect_only on waf-prod",
+    "mapping": "T1562"
+  },
+  {
+    "rule": "D12",
+    "name": "Log source went silent",
+    "severity": "High",
+    "ts": "2026-09-18T03:54:00+00:00",
+    "actor": "api-gateway",
+    "detail": "no events from api-gateway for 27 min",
+    "mapping": "T1562"
+  },
+  {
+    "rule": "D10",
+    "name": "Agent anomalous volume / customer enumeration",
+    "severity": "Medium",
+    "ts": "2026-09-18T09:16:20+00:00",
+    "actor": "agent-intake-01",
+    "detail": "21 calls, 21 distinct customers in 5 min",
+    "mapping": "T1119 / OWASP-LLM06"
+  },
+  {
+    "rule": "D09",
+    "name": "Agent called approval-required tool without approval",
+    "severity": "High",
+    "ts": "2026-09-18T10:40:00+00:00",
+    "actor": "agent-support-01",
+    "detail": "tool=issue_refund session=sess-x1",
+    "mapping": "OWASP-LLM06"
+  },
+  {
+    "rule": "D09",
+    "name": "Agent called prohibited tool",
+    "severity": "Critical",
+    "ts": "2026-09-18T10:40:30+00:00",
+    "actor": "agent-support-01",
+    "detail": "tool=create_user session=sess-x1",
+    "mapping": "OWASP-LLM06"
+  },
+  {
+    "rule": "D11",
+    "name": "Injection indicator followed by side-effect tool call",
+    "severity": "High",
+    "ts": "2026-09-18T13:30:40+00:00",
+    "actor": "agent-billing-01",
+    "detail": "tool=update_customer within 120s of flagged retrieval (session sess-inj-1)",
+    "mapping": "OWASP-LLM01"
+  },
+  {
+    "rule": "D05",
+    "name": "Service account used from previously unseen network",
+    "severity": "High",
+    "ts": "2026-09-18T15:05:00+00:00",
+    "actor": "svc-integration",
+    "detail": "source 198.51.100.77 not in baseline networks",
+    "mapping": "T1078.004",
+    "ip": "198.51.100.77"
+  },
+  {
+    "rule": "D06",
+    "name": "Mass record access",
+    "severity": "High",
+    "ts": "2026-09-18T15:22:09.600000+00:00",
+    "actor": "svc-analytics",
+    "detail": "5138 records in 10 min (threshold 5000)",
+    "mapping": "T1213",
+    "records_in_window": 5138,
+    "threshold": 5000
+  },
+  {
+    "rule": "D07",
+    "name": "Bulk read followed by egress to unapproved destination",
+    "severity": "Critical",
+    "ts": "2026-09-18T15:36:00+00:00",
+    "actor": "svc-analytics",
+    "detail": "mass read then 412000000 bytes to 203.0.113.45",
+    "mapping": "T1041",
+    "dst_ip": "203.0.113.45"
+  },
+  {
+    "rule": "D08",
+    "name": "Egress to unapproved destination",
+    "severity": "High",
+    "ts": "2026-09-18T15:36:00+00:00",
+    "actor": "svc-analytics",
+    "detail": "dst 203.0.113.45:443 bytes=412000000",
+    "mapping": "T1048"
+  },
+  {
+    "rule": "D14",
+    "name": "Secret detected in pushed commit",
+    "severity": "High",
+    "ts": "2026-09-18T16:10:00+00:00",
+    "actor": "dev.noor",
+    "detail": "1 finding(s) in apex/platform",
+    "mapping": "T1552"
+  },
+  {
+    "rule": "D15",
+    "name": "PHI pattern found in application/prompt logs",
+    "severity": "High",
+    "ts": "2026-09-18T17:05:00+00:00",
+    "actor": "assistant-svc",
+    "detail": "pattern=national_id_ctx value=*******001",
+    "mapping": "OWASP-LLM02",
+    "log_source": "prompt_log"
+  },
+  {
+    "rule": "D16",
+    "name": "LLM token spend spike (denial-of-wallet)",
+    "severity": "Medium",
+    "ts": "2026-09-18T18:17:00+00:00",
+    "actor": "tenant-b",
+    "detail": "400956 tokens in 60 min (cap 400000)",
+    "mapping": "OWASP-LLM10"
+  }
+]
